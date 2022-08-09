@@ -3,7 +3,6 @@
 %\documentclass[longauth]{aa} % for the long lists of affiliations 
 %\documentclass[letter]{aa} % for the letters 
 \documentclass{aa}
-\usepackage{showyourwork}
 
 
 %
@@ -11,10 +10,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{txfonts}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\usepackage[options]{hyperref}
 % To add links in your PDF file, use the package "hyperref"
 % with options according to your LaTeX or PDFLaTeX drivers.
 %
+\usepackage{showyourwork}
+\usepackage{hyperref}
+
 \begin{document} 
 
 
@@ -81,69 +82,40 @@
 %
 %-------------------------------------------------------------------
 
-\section{Introduction}
+   \section{Introduction}
 
-The star blah blah underwent an exgtended dimming event from 2021, announced by the ASAS-SN group in Atronomersd Telegram xxxxx.
+   The star (Gaia EDR3 source 5539970601632026752 at RA=08:15:23.2996, DEC=-38:59:23.304, $d\sim 556$ pc, G=13.4 mag, BP-RP=0.8 mag) underwent a sudden dimming event in December 2021, which was announced by \citet{RizzoSmith21} and assigned the identifier ASASSN-21qj.
+   %
+   The star has subsequently maintained rapidly fluctuating photometry through to August 2022 \citep{RizzoSmith22} and has been monitored intensively by the AAVSO observers and the LCOGT netowrk of telescopes.
+   %
+   It had previously shown no significant stellar variation in the optical bands for 9600 days as reported in \citet{RizzoSmith21}.
+   %
+   Searches through other photometric archives showed no other significan changes in the optical bands before this epoch.
+   %
+   The wide field infrared satelliwte WISE has photometric imaging from 3.8 microns (band W1) through to 25 microns (band W4), and the NEOWISE survey has photometry for bands W1 and W2 for this star.
+   %
+   This star showed a significant brightening of 0.7 magnitudes in W1 and 0.8 magnitudes in W2 between two observing epochs (65000 MJD and 65120 MJD), and the IR color of the star had changed from W1-W2=0.0 to 1.2, but no significant changes in flux in the optical bands were seen during this time.
+   %
+   Some 900 days later, the dimming was seen in the optical, and the absorption is larger at shorter optical wavelengths.
+   %
+   These observations are all consistent with an event that generated a significant amount of sub-micron dust which subsequently started to transit the stellar disk.
 
+   We hypothesise that there was a collision between one or more rocky bodies in the system which generated a significant amount of dust, which has then subsequently begun to transit the star.
+   %
+   This is consistent with a late type imapct between a planet and large asteroid, similar to the one that generated the Earth/Moon system.
 
-Sainio noted that the star underwent a significant brightening in the NEOWISE photometry.
+   The structure of our paper is as follows: the analysis of the star is given in Section~\ref{sec:star}, the observations are detailed in Section~\ref{sec:obs}, and we make an estimate of the physical parameters of the hypothesised dust cloud in Section~\ref{sec:dustcloud}.
+   %
+   We then place this model in the context of planet formation in Section~\ref{sec:discussion} and summarise the paper in Section~\ref{sec:conclusion}.
 
-The brightening is indicative of a collisional event between planetessimals that generates a significant amount of smaller dust, which explains the brightening in W3 and W4 seen with the NEOWISE data.
+\section{Properties of the star}\label{sec:star}
 
-The subsequent dimming seen by ASAS-SN shows the debris cloud passing in front of the star.
-
-
-\section{Observatons}
-
-\subsection{ASAS-SN photometry}
- \begin{figure}
-   \centering
-   \includegraphics[width=\hsize]{ASAS-photometry.pdf}
-      \caption{ASAS-SN $g'$ photometry of the star. The red lines indicate the epochs between which the NEOWISE brightening event occurred.
-              }
-         \label{fig:asphot}
-   \end{figure}
-
-\subsection{NEOWISE photometry}
-
-\begin{figure}
-   \centering
-   \includegraphics[width=\hsize]{NEOWISE_ASASSN-21dj.pdf}
-      \caption{NEOWISE $W1$ and $W2$ photometry of the star, with the WISE color in the lowest panel.
-      %
-      A significant brightening event occurs between MJD 558074 and MJD 58225.
-      %
-      The $NEOWISE$ color changes from colourless to very red, which fades back towards colourless over 500 days.
-              }
-         \label{fig:wisephot}
-   \end{figure}
-   
-\subsection{LCOGT photometry}
-
-\subsection{ATLAS}
-
-ATLAS photometry was obtained from their database.
-ATLAS is a project that searches for near earth asteroids down to a magnitude of 19 
-\citep{Tonry18}.
-%
-Two filters were obtained, the `o' and `c' filters respectively.
-%
-Photomety consists of two to four photometric points observed each night when conditions permitted.
-%
-Photometry with large errors was rejected in a first pass.
-%
-The remaining observations during a night were averaged and an error based on the r.m.s. of these nightly points was calaulated.
-%
-This left XXXx points covering from XXXX MJD to XXXX MJD.
-%
-The photometry covers the time period where the collision event occurred. 
-
-\section{Properties of the star}
+Gaia EDR3 source 5539970601632026752 at RA=08:15:23.2996, DEC=-38:59:23.304, $d\sim 556$ pc, G=13.4 mag, BP-RP=0.8 mag.
 
 SED from Eric and VOSA in Figure~\ref{fig:sed}.
 
  Including IR WISE photometry
-was forcing it to lower metallicity ([Fe/H] ~ -0.5-1), cooler (~Sun) fits. Fits also favor low reddening values (Av ~ 0.05). 
+was forcing it to lower metallicity ([Fe/H] ~ -0.5-1), cooler (~Sun) fits. Fits also favor low reddening values ($A_v\sim 0.05$). 
 Similar to Alpha Cen A, but ~solar metallicity seems OK now. Almost exactly 1 Rsun! 
 
 Best parameters as of 1/2/2022 (see below from VOSA fit) 
@@ -158,27 +130,95 @@ Rad = 1.009 +- 0.030 Rsun
 
 \begin{figure}
    \centering
-   \includegraphics[width=\hsize]{ASAS-SN_J081523.41-385923.4.bt-settl-agss.5881.phot.png}
+   \includegraphics[width=\hsize]{figures/ASAS-SN_J081523.41-385923.4.bt-settl-agss.5881.phot.png}
       \caption{VOSA fit to photometry of ASAS-SN J0815.}
          \label{fig:sed}
+\end{figure}
+
+\subsection{Possible multiplicity in the  system}
+
+Another star (Gaia EDR3 5539970601632026752) has a distance consistent (within uncertainties) with that of ASASSN-21qj.
+%
+This source has a cooler effective temperature.
+%
+It is about 3.8 arcseconds away from the primary star, with a distance of 560pc this is a projected distance of 2100au.
+%
+The primary star shows a value of RUWE of 1.10, implying that there is a substellar companion to the primary star.
+
+Proper motions of the two stars are not consostent with each other, but if the primary has a substellar companion then this could change the measured proper motion of the primary and they could still be bound companions to each other.
+%
+TODO estimate the chance of having these two stars at the same distance but being unrelated to each other.
+
+
+
+
+\section{Observations}\label{sec:obs}
+
+\subsection{ASAS-SN photometry}
+
+The beginning of the eclipse was identified in \citet{RizzoSmith21} through the ASAS-SN survey.
+%
+
+
+\begin{figure}
+   \begin{centering}
+   \includegraphics[width=\hsize]{figures/ASAS-photometry.pdf}
+      \caption{ASAS-SN $g'$ photometry of the star. The red lines indicate the epochs between which the NEOWISE brightening event occurred.
+              }
+              \label{fig:asphot}
+              \end{centering}
+       \end{figure}
+
+\subsection{NEOWISE photometry}
+
+\begin{figure}
+   \centering
+   \includegraphics[width=\hsize]{figures/NEOWISE_ASASSN-21dj.pdf}
+      \caption{NEOWISE $W1$ and $W2$ photometry of the star, with the WISE color in the lowest panel.
+      %
+      A significant brightening event occurs between MJD 558074 and MJD 58225.
+      %
+      The $NEOWISE$ color changes from colourless to very red, which fades back towards colourless over $\sim 500$ days.
+              }
+         \label{fig:wisephot}
    \end{figure}
 
+\subsection{LCOGT photometry}
 
-\section{Analysis}
+\subsection{ATLAS}
 
-\subsection{dust properties from the colors}
+ATLAS photometry was obtained from their database.
 
-\section{Discussion}
+
+
+ATLAS is a project that searches for near earth asteroids down to a magnitude of 19 
+\citep{Tonry18}.
+%
+Two filters were obtained, the `o' and `c' filters respectively.
+%
+Photomety consists of two to four photometric points observed each night when conditions permitted.
+%
+Photometry with large errors was rejected in a first pass.
+%
+The remaining observations during a night were averaged and an error based on the r.m.s. of these nightly points was calaulated.
+%
+The photometry covers the time period where the collision event occurred. 
+
+
+\section{Analysis}\label{sec:dustcloud}
+
+\subsection{Dust properties from the colors in the optical}
+
+\section{Discussion}\label{sec:discussion}
 
 Cound be a ring system
 
 Could be a planetessimal system evolving
 
-Something else?
-
+Alternatives?
 
 %------------------------
-\section{Conclusions}
+\section{Conclusions}\label{sec:conclusion}
 
    \begin{enumerate}
       \item There was a collision between planetoids towards ASASSN-21qj which generated a debris cloud.
@@ -191,17 +231,6 @@ Something else?
       number Ts~17/2--1.
 \end{acknowledgements}
 
-% WARNING
-%-------------------------------------------------------------------
-% Please note that we have included the references to the file aa.dem in
-% order to compile it, but we ask you to:
-%
-% - use BibTeX with the regular commands:
-%   \bibliographystyle{aa} % style aa.bst
-%   \bibliography{Yourfile} % your references Yourfile.bib
-%
-% - join the .bib files when you upload your source files
-% -------------------------------------------------------------------
 \bibliographystyle{aa}
 \bibliography{bib}
 
