@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from astropy.io import ascii
 import paths
 
-twi = ascii.read('neowise/obs_NEOWISE.ecsv')
+twi = ascii.read(paths.data / 'obs_NEOWISE.ecsv')
 tat = ascii.read(paths.data / 'obs_ATLAS.ecsv')
 tas = ascii.read(paths.data / 'obs_ASASSN.ecsv')
 
