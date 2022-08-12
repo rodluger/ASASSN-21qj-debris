@@ -10,7 +10,6 @@ overleaf:
 
 datasets:
   10.5072/zenodo.1093292:
-    destination: src/data
     contents:
       aavsodata_62f60478b309b.txt: src/data/aavso/aavsodata_62f60478b309b.txt
       ASASSN-21qj_2013-2021.tbl: src/data/neowise/ASASSN-21qj_2013-2021.tbl
