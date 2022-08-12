@@ -234,12 +234,15 @@
 \def\@hangfrom##1{\setbox\@tempboxa\hbox{{##1}}%
       \hangindent \parindent\noindent\box\@tempboxa}
 \def\sectcounterend{:}
-\def\@seccntformat##1{\appendixname\ \csname the##1\endcsname\sectcounterend%
+\def\@seccntformat##1{\csname theap##1\endcsname%
                       \hskip\betweenumberspace}
   \setcounter{section}{0}%
   \setcounter{subsection}{0}%
   \setcounter{figure}{0}%
   \setcounter{table}{0}%
+  \newcommand\theapsection{\appendixname\ \@Alph\c@section\sectcounterend}%
+  \newcommand\theapsubsection{\@Alph\c@section.\@arabic\c@subsection.}%
+  \newcommand\theapsubsubsection{\theapsubsection\@arabic\c@subsubsection.}%
   \renewcommand\thesection{\@Alph\c@section}%
   \renewcommand\thesubsection{\@Alph\c@section.\@arabic\c@subsection}%
   \renewcommand\thesubsubsection{\thesubsection.\@arabic\c@subsubsection}%
@@ -2029,6 +2032,12 @@
   \newcommand*\bbbx{\ensuremath{\mathbf{X}}}
   \newcommand*\bbby{\ensuremath{\mathbf{Y}}}
   \newcommand*\bbbz{\ensuremath{\mathbf{Z}}}}
+\@ifpackageloaded{hyperref}%
+{}{\RequirePackage[colorlinks=true,
+    linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue]{hyperref}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Macro ORCID %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\orcid}[1]{\unskip\protect\href{https://orcid.org/#1}{\protect\includegraphics[width=8pt,clip]{logo_orcid}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 }
 \setlength\leftmargini  {\parindent}
 \leftmargin  \leftmargini
@@ -2063,6 +2072,8 @@
 \newcommand{\eprint}[2][]{%
 {\tt\if!#1!#2\else#1\arxivprefixesep\ignorespaces#2\fi}%
 }
+% \corr : Mute tag used by LE
+\newcommand{\corr}[1]{#1}
 \endinput
 %%
 %% End of file `aa.cls'.
