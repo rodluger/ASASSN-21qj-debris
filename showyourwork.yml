@@ -1,7 +1,7 @@
 version: 0.3.0
 overleaf:
   id: 62f01fb40d8f200437137e31
-  push: 
+  push:
     - src/tex/figures
     - src/tex/output
   pull:
@@ -10,3 +10,7 @@ overleaf:
 dependencies:
     src/scripts/plot_all_photometry.py:
         - src/data/obs_ATLAS.ecsv
+    src/scripts/plot_all_photometry.py:
+        - src/data/obs_ASASSN.ecsv
+    src/scripts/plot_all_photometry.py:
+        - src/data/obs_NEOWISE.ecsv
