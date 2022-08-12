@@ -7,3 +7,6 @@ overleaf:
   pull:
     - src/tex/ms.tex
     - src/tex/bib.bib
+dependencies:
+    src/scripts/plot_all_photometry.py:
+        - src/data/obs_ATLAS.ecsv
