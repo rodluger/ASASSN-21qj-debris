@@ -3,21 +3,24 @@
 %\documentclass[longauth]{aa} % for the long lists of affiliations 
 %\documentclass[letter]{aa} % for the letters 
 \documentclass{aa}
-
-
-%
-\usepackage{graphicx}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{txfonts}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% To add links in your PDF file, use the package "hyperref"
-% with options according to your LaTeX or PDFLaTeX drivers.
-%
 \usepackage{showyourwork}
+
+\usepackage{txfonts}
+\usepackage{natbib}
+
+\usepackage{graphicx}
+
+\usepackage{color}
 \usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=[rgb]{0,0,0.8}}
+
+% the three lines suppress the hyperref 'link empty' warnings
+% explanation at: https://tex.stackexchange.com/questions/345764/journal-class-shows-package-hyperref-warning-suppressing-link-with-empty-targe
+\makeatletter
+\renewcommand*\aa@pageof{, page \thepage{} of \pageref*{LastPage}}
+\makeatother
 
 \begin{document} 
-
 
    \title{Collision debris from a disruptive event}
 
@@ -228,9 +231,8 @@ Alternatives?
    \end{enumerate}
 
 \begin{acknowledgements}
-      Part of this work was supported by the German
-      \emph{Deut\-sche For\-schungs\-ge\-mein\-schaft, DFG\/} project
-      number Ts~17/2--1.
+Thank matplotlib
+
 \end{acknowledgements}
 
 \bibliographystyle{aa}
