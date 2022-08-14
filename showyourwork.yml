@@ -23,13 +23,13 @@ dependencies:
         - src/data/obs_ASASSN.ecsv
     src/scripts/plot_all_photometry.py:
         - src/data/obs_NEOWISE.ecsv
-#    src/scripts/plot_all_photometry.py:
-#        - src/data/obs_AAVSO.ecsv
+    src/scripts/plot_all_photometry.py:
+        - src/data/obs_AAVSO.ecsv
     src/scripts/convert_atlas.py:
         - src/data/atlas/job211831.txt
     src/scripts/convert_asassn.py:
         - src/data/asassn/light_curve_f51db35b-11b8-4840-a6d9-979a455d6978.csv
     src/scripts/convert_neowise.py:
         - src/data/neowise/ASASSN-21qj_2013-2021.tbl
-#    src/scripts/convert_aavso.py:
-#        - src/data/aavso/aavsodata_62f60478b309b.txt
+    src/scripts/convert_aavso.py:
+        - src/data/aavso/aavsodata_62f60478b309b.txt
