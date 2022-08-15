@@ -2,7 +2,7 @@ rule proc_atlas:
      input:
         "atlas/job211831.txt"
      output:
-        "obs_ATLAS.ecsv"
+        "atlas/obs_ATLAS.ecsv"
      conda:
         "environment.yml"
      script:

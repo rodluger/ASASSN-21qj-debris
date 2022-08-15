@@ -50,7 +50,6 @@ for key, group in zip(t_by_filter.groups.keys, t_by_filter.groups):
     print('')
 
 ax.legend()
-fig.show()
 fig.savefig('_check_aavso1.pdf')
 
 (tB, tI, tV) = t_by_filter.groups
