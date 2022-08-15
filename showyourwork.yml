@@ -30,3 +30,7 @@ dependencies:
         - src/data/neowise/ASASSN-21qj_2013-2021.tbl
     src/scripts/convert_aavso.py:
         - arc/data/aavso/aavsodata_62f60478b309b.txt
+
+dag:
+     render: true
+     engine: sfdp

@@ -39,3 +39,4 @@ rule proc_aavso:
 
 dag:
      render: true
+     engine: sfdp
