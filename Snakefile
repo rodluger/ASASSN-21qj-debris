@@ -36,3 +36,6 @@ rule proc_aavso:
         "environment.yml"
      script:
         "src/scripts/convert_aavso.py"
+
+dag:
+     render: true
