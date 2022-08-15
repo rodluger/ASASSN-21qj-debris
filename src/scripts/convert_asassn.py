@@ -25,7 +25,6 @@ ax.errorbar(t['MJD'],t['flux(mJy)'],yerr=t['flux_err'],fmt='.')
 ax.set_ylabel('Flux [mJy]')
 ax.set_xlabel('Epoch [MJD]')
 ax.set_title('data from {}'.format(fin))
-fig.show()
 fig.savefig('_check_asassn0.pdf')
 
 
@@ -46,7 +45,6 @@ for key, group in zip(t_by_filter.groups.keys, t_by_filter.groups):
     print('')
 
 ax.legend()
-fig.show()
 fig.savefig('_check_asassn1.pdf')
 
 (tV, tg) = t_by_filter.groups
@@ -99,5 +97,3 @@ tn = vstack([tV,tg])
 tn['Survey'] = "ASASSN"
 
 tn.write(paths.data / 'obs_ASASSN.ecsv',format='ascii.ecsv',overwrite=True)
-
-plt.show()

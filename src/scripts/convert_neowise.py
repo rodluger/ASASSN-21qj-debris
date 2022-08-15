@@ -94,5 +94,3 @@ tn['w1w2'].format = '%.3f'
 tn['w1w2err'].format = '%.3f'
 
 tn.write(paths.data / 'obs_NEOWISE.ecsv',format='ascii.ecsv',overwrite=True)
-
-plt.show()

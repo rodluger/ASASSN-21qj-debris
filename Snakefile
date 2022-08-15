@@ -1,15 +1,15 @@
 rule proc_atlas:
      input:
-        "atlas/job211831.txt"
+        "src/data/atlas/job211831.txt"
      output:
-        "atlas/obs_ATLAS.ecsv"
+        "obs_ATLAS.ecsv"
      conda:
         "environment.yml"
      script:
         "src/scripts/convert_atlas.py"
 rule proc_asassn:
      input:
-        "asassn/light_curve_f51db35b-11b8-4840-a6d9-979a455d6978.csv"
+        "src/data/asassn/light_curve_f51db35b-11b8-4840-a6d9-979a455d6978.csv"
      output:
         "obs_ASASSN.ecsv"
      conda:
@@ -19,7 +19,7 @@ rule proc_asassn:
 
 rule proc_neowise:
      input:
-        "neowise/ASASSN-21qj_2013-2021.tbl"
+        "src/data/neowise/ASASSN-21qj_2013-2021.tbl"
      output:
         "obs_NEOWISE.ecsv"
      conda:
@@ -29,7 +29,7 @@ rule proc_neowise:
 
 rule proc_aavso:
      input:
-        "aavso/aavsodata_62f60478b309b.txt"
+        "src/data/aavso/aavsodata_62f60478b309b.txt"
      output:
         "obs_AAVSO.ecsv"
      conda:

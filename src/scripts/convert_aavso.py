@@ -29,7 +29,6 @@ ax.errorbar(t['MJD'],t['Magnitude'],yerr=t['Uncertainty'],fmt='.')
 ax.set_ylabel('Magnitude')
 ax.set_xlabel('Epoch [MJD]')
 ax.set_title('data from {}'.format(fin))
-fig.show()
 fig.savefig('_check_aavso0.pdf')
 
 
@@ -98,5 +97,3 @@ tn = vstack([tB,tI,tV])
 tn['Survey'] = "AAVSO"
 
 tn.write(paths.data / 'obs_AAVSO.ecsv',format='ascii.ecsv',overwrite=True)
-
-plt.show()

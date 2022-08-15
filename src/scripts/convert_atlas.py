@@ -21,7 +21,6 @@ ax.errorbar(t['MJD'],t['uJy'],yerr=t['duJy'],fmt='.')
 ax.set_ylabel('Flux [uJy]')
 ax.set_xlabel('Epoch [MJD]')
 ax.set_title('data from {}'.format(fin))
-fig.show()
 fig.savefig('_check_atlas0.pdf')
 
 # get a list of the unique bandpasses
@@ -43,7 +42,6 @@ for key, group in zip(t_by_filter.groups.keys, t_by_filter.groups):
     print('')
 
 plt.legend()
-fig.show()
 fig.savefig('_check_atlas1.pdf')
 
 
@@ -102,5 +100,3 @@ tn['Filter'] = tn['F']
 tn['Survey'] = "ATLAS"
 
 tn.write(paths.data / 'obs_ATLAS.ecsv',format='ascii.ecsv',overwrite=True)
-
-plt.show()
