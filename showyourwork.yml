@@ -18,15 +18,15 @@ datasets:
 
 dependencies:
     src/scripts/plot_all_photometry.py:
-        - obs_ATLAS.ecsv
-        - obs_ASASSN.ecsv
-        - obs_NEOWISE.ecsv
-        - obs_AAVSO.ecsv
+        - src/data/obs_ATLAS.ecsv
+        - src/data/obs_ASASSN.ecsv
+        - src/data/obs_NEOWISE.ecsv
+        - src/data/obs_AAVSO.ecsv
     src/scripts/convert_atlas.py:
-        - atlas/job211831.txt
+        - src/data/atlas/job211831.txt
     src/scripts/convert_asassn.py:
-        - asassn/light_curve_f51db35b-11b8-4840-a6d9-979a455d6978.csv
+        - src/data/asassn/light_curve_f51db35b-11b8-4840-a6d9-979a455d6978.csv
     src/scripts/convert_neowise.py:
-        - neowise/ASASSN-21qj_2013-2021.tbl
+        - src/data/neowise/ASASSN-21qj_2013-2021.tbl
     src/scripts/convert_aavso.py:
-        - aavso/aavsodata_62f60478b309b.txt
+        - arc/data/aavso/aavsodata_62f60478b309b.txt

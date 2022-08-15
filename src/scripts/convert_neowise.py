@@ -5,7 +5,7 @@ from astropy.table import unique,vstack,Table
 import paths
 
 
-t = ascii.read(paths.data / 'ASASSN-21qj_2013-2021.tbl')
+t = ascii.read(paths.data / 'neowise/ASASSN-21qj_2013-2021.tbl')
 
 fig, ax = plt.subplots(2,1,figsize=(8,5),sharex=True)
 ax[0].errorbar(t['mjd'],t['w1mpro'],yerr=t['w1sigmpro'],fmt='.')
