@@ -34,3 +34,6 @@ dependencies:
 dag:
      render: true
      engine: sfdp
+     graph_attr:
+       ranksep: "1"
+       nodesep: "0.65"
