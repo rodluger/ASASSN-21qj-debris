@@ -97,3 +97,4 @@ tn = vstack([tB,tI,tV])
 tn['Survey'] = "AAVSO"
 
 tn.write(paths.data / 'obs_AAVSO.ecsv',format='ascii.ecsv',overwrite=True)
+plt.show()

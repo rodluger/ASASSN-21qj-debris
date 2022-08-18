@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from astropy.io import ascii
+from astropy.time import Time
 import paths
 
 import matplotlib as mpl
@@ -15,7 +16,6 @@ tasV = tas[tas['Filter']=='V']
 
 fig, (ax1,ax2,ax3) = plt.subplots(3,1,figsize = (10,7), sharex=True)
 
-
 ax2.errorbar(twi['MJD'],twi['w1'],yerr=twi['w1err'],
     color='blue',fmt='.',
     ms=10,
@@ -28,13 +28,6 @@ ax3.errorbar(twi['MJD'],twi['w1w2'],yerr=twi['w1w2err'],
     ms=10,
     fmt='.')
 
-
-#ax1.errorbar(tat['MJD'],tat['fnorm'],yerr=tat['fnormerr'],color='blue',fmt='.', label='ATLAS')
-#ax1.errorbar(tas['MJD'],tas['fnorm'],yerr=tas['fnormerr'],
-#    color='green',fmt='.',
-#    alpha=0.5,
-#    ms=10,
-#     label='ASASSN')
 ax1.scatter(tasg['MJD'],tasg['fnorm'],
     color='green',
     alpha=0.2,
