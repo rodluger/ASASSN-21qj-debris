@@ -43,7 +43,7 @@ dependencies:
         - src/data/filter_curves/SLOAN.SDSS.i.xml
         - src/data/filter_curves/SLOAN.SDSS.r.xml
     src/scripts/calc_neowise_properties.py:
-       - src/data/obs_NEOWISE.ecsv
+        - src/data/obs_NEOWISE.ecsv
     src/scripts/convert_atlas.py:
         - src/data/atlas/job211831.txt
     src/scripts/convert_asassn.py:
