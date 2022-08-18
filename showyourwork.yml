@@ -23,17 +23,15 @@ datasets:
       Bessel_V-1.txt: src/data/filter_curves/Bessel_V-1.txt
       Misc_Atlas.orange.dat: src/data/filter_curves/Misc_Atlas.orange.dat
       Bessel_I-1.txt: src/data/filter_curves/Bessel_I-1.txt
-# TODO add the filters into Zenodo
 dependencies:
     src/scripts/plot_all_photometry.py:
         - src/data/obs_ATLAS.ecsv
         - src/data/obs_ASASSN.ecsv
         - src/data/obs_NEOWISE.ecsv
         - src/data/obs_AAVSO.ecsv
-    src/scripts/plot_all_eclipse.py:
+    src/scripts/plot_eclipse_overview.py:
         - src/data/obs_ATLAS.ecsv
         - src/data/obs_ASASSN.ecsv
-        - src/data/obs_NEOWISE.ecsv
         - src/data/obs_AAVSO.ecsv
     src/scripts/plot_filter_curves.py:
         - src/data/filter_curves/Bessel_B-1.txt
