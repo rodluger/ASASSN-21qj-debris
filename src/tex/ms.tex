@@ -174,9 +174,11 @@ An overview of all the photometry is presented in Figure~\ref{fig:allphot}.
 \begin{figure*}
    \begin{centering}
    \includegraphics[width=\textwidth]{figures/eclipse_overview.pdf}
-      \caption{NEOWISE $W1$ and $W2$ photometry of the star, with the WISE color in the lowest panel.
+      \caption{Photometry from the optical bands of the eclipse.
       %
-      The $NEOWISE$ color changes from colourless to very red, which fades back towards colourless over $\sim 500$ days.
+The different telescopes and filters are indicated in the legend.
+%
+Each light curve is offset vertically by 0.8.
               }
               \label{fig:allphot}
               \script{plot_eclipse_overview.py}
@@ -239,6 +241,22 @@ The photometry covers the time period where the collision event occurred.
 \section{Analysis}\label{sec:dustcloud}
 
 \subsection{Dust properties from the colors in the optical}
+
+
+
+\begin{figure*}
+   \begin{centering}
+   \includegraphics[width=\textwidth]{figures/scale_combined_photometry.pdf}
+      \caption{Photometry from the optical bands of the eclipse scaled arbitrarily so as to combine the light curves into a ``gray'' light curve.
+      %
+      The axis is inverted to show Absorption.
+              }
+              \label{fig:allphot}
+              \script{plot_scale_combined_photometry.py}
+              \end{centering}
+       \end{figure*}
+
+
 
 \section{Discussion}\label{sec:discussion}
 

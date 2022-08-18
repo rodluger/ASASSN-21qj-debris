@@ -42,6 +42,9 @@ dependencies:
         - src/data/filter_curves/SLOAN.SDSS.g.xml
         - src/data/filter_curves/SLOAN.SDSS.i.xml
         - src/data/filter_curves/SLOAN.SDSS.r.xml
+    src/scripts/plot_all_photometry.py:
+        - src/data/obs_ASASSN.ecsv
+        - src/data/obs_AAVSO.ecsv
     src/scripts/calc_neowise_properties.py:
         - src/data/obs_NEOWISE.ecsv
     src/scripts/convert_atlas.py:
