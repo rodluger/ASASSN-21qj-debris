@@ -52,5 +52,5 @@ ax1.hlines(np.arange(8)*offset+1,59000,60000,color='grey',alpha=0.5)
 ax1.vlines(np.arange(59300,60000,50),0,5,color='grey',alpha=0.5)
 
 
-plt.savefig(paths.figures / 'eclipse_overview.pdf')
-plt.show()
+plt.savefig(paths.figures / 'eclipse_overview.pdf', bbox_inches='tight')
+#plt.show()
