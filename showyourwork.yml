@@ -9,12 +9,20 @@ overleaf:
     - src/tex/bib.bib
 
 datasets:
-  10.5072/zenodo.1093292:
+  10.5072/zenodo.1094565:
     contents:
       aavsodata_62f60478b309b.txt: src/data/aavso/aavsodata_62f60478b309b.txt
       ASASSN-21qj_2013-2021.tbl: src/data/neowise/ASASSN-21qj_2013-2021.tbl
       job211831.txt: src/data/atlas/job211831.txt
       light_curve_f51db35b-11b8-4840-a6d9-979a455d6978.csv: src/data/asassn/light_curve_f51db35b-11b8-4840-a6d9-979a455d6978.csv
+      Misc_Atlas.cyan.dat: src/data/filter_curves/Misc_Atlas.cyan.dat
+      Bessel_B-1.txt: src/data/filter_curves/Bessel_B-1.txt
+      SLOAN.SDSS.r.xml: src/data/filter_curves/SLOAN.SDSS.r.xml
+      SLOAN.SDSS.g.xml: src/data/filter_curves/SLOAN.SDSS.g.xml
+      SLOAN.SDSS.i.xml: src/data/filter_curves/SLOAN.SDSS.i.xml
+      Bessel_V-1.txt: src/data/filter_curves/Bessel_V-1.txt
+      Misc_Atlas.orange.dat: src/data/filter_curves/Misc_Atlas.orange.dat
+      Bessel_I-1.txt: src/data/filter_curves/Bessel_I-1.txt
 # TODO add the filters into Zenodo
 dependencies:
     src/scripts/plot_all_photometry.py:
