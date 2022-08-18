@@ -57,4 +57,4 @@ pc(ax3,atlas_c['col1'], atlas_c['col2'],'cyan','c',textoffset=-1000)
 pc(ax3,atlas_o['col1'], atlas_o['col2'],'orange','o',textoffset=0.)
 
 fig.savefig(paths.figures / 'filter_curves.pdf')
-plt.show()
+#plt.show()

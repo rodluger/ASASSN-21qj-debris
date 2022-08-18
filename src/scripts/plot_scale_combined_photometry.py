@@ -69,4 +69,4 @@ ax2.set_ylim(0,1.25)
 
 
 plt.savefig(paths.figures / 'scale_combined_photometry.pdf', bbox_inches='tight')
-plt.show()
+#plt.show()
