@@ -41,5 +41,5 @@ ax1.legend()
 ax2.legend()
 ax3.set_xlabel('Epoch [MJD]')
 
-plt.savefig(paths.figures / 'all_photometry.pdf')
+plt.savefig(paths.figures / 'all_the_photometry.pdf')
 plt.show()
