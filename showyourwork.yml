@@ -29,10 +29,6 @@ dependencies:
         - src/data/obs_ASASSN.ecsv
         - src/data/obs_NEOWISE.ecsv
         - src/data/obs_AAVSO.ecsv
-    src/scripts/plot_eclipse_overview2.py:
-        - src/data/obs_ATLAS.ecsv
-        - src/data/obs_ASASSN.ecsv
-        - src/data/obs_AAVSO.ecsv
     src/scripts/plot_filter_curves.py:
         - src/data/filter_curves/Bessel_B-1.txt
         - src/data/filter_curves/Bessel_I-1.txt
@@ -42,6 +38,10 @@ dependencies:
         - src/data/filter_curves/SLOAN.SDSS.g.xml
         - src/data/filter_curves/SLOAN.SDSS.i.xml
         - src/data/filter_curves/SLOAN.SDSS.r.xml
+    src/scripts/plot_eclipse_overview2.py:
+        - src/data/obs_ATLAS.ecsv
+        - src/data/obs_ASASSN.ecsv
+        - src/data/obs_AAVSO.ecsv
     src/scripts/plot_scale_combined_photometry.py:
         - src/data/obs_ASASSN.ecsv
         - src/data/obs_AAVSO.ecsv
