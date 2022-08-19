@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 from astropy.io import ascii
 import paths
 
+print('running plot_scale_combined_photometry...')
+
 tas = ascii.read(paths.data / 'obs_ASASSN.ecsv')
 tav = ascii.read(paths.data / 'obs_AAVSO.ecsv')
 
@@ -64,8 +66,8 @@ ax1.scatter(tavB['MJD'],(1.-tavB['fnorm'])*0.85,color='black',
     alpha=0.5, edgecolors='none',
     s=10, label='AAVSO B')
 
-ax1.set_ylim(0,1.25)
-ax2.set_ylim(0,1.25)
+ax1.set_ylim(0,1.26)
+ax2.set_ylim(0,1.26)
 
 
 plt.savefig(paths.figures / 'scale_combined_photometry.pdf', bbox_inches='tight')

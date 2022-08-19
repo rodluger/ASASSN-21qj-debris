@@ -29,7 +29,7 @@ dependencies:
         - src/data/obs_ASASSN.ecsv
         - src/data/obs_NEOWISE.ecsv
         - src/data/obs_AAVSO.ecsv
-    src/scripts/plot_eclipse_overview.py:
+    src/scripts/plot_eclipse_overview2.py:
         - src/data/obs_ATLAS.ecsv
         - src/data/obs_ASASSN.ecsv
         - src/data/obs_AAVSO.ecsv
