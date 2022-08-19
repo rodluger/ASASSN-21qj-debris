@@ -8,6 +8,7 @@ tat = ascii.read(paths.data / 'obs_ATLAS.ecsv')
 tas = ascii.read(paths.data / 'obs_ASASSN.ecsv')
 tav = ascii.read(paths.data / 'obs_AAVSO.ecsv')
 
+print('running plot_eclipse_overview.py...')
 
 tat_by_filter = tat.group_by('Filter')
 print('ATLAS all observed photometric bands:')
